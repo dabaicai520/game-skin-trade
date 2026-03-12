@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkinTrade 前端
 
-## Getting Started
+游戏饰品交易平台前端项目，类似 Buff.163.com
 
-First, run the development server:
+## 技术栈
+
+- **框架**: Next.js 15 (App Router)
+- **语言**: TypeScript
+- **样式**: Tailwind CSS
+- **包管理**: npm
+
+## 项目结构
+
+```
+src/
+├── app/                    # Next.js App Router 页面
+│   ├── globals.css        # 全局样式
+│   ├── layout.tsx         # 根布局
+│   ├── page.tsx           # 首页
+│   └── skins/             # 饰品相关页面
+│       ├── page.tsx       # 饰品列表页
+│       └── [id]/          # 饰品详情页（动态路由）
+│           └── page.tsx
+└── components/            # React 组件
+    └── Navigation.tsx     # 导航栏组件
+```
+
+## 开发
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 启动开发服务器
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 构建生产版本
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 功能特性
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ 响应式设计，支持移动端
+- ✅ 深色模式支持
+- ✅ 首页展示：平台特色、热门饰品、游戏分类
+- ✅ 饰品列表：筛选、搜索、分页功能
+- ✅ 饰品详情：完整信息展示、相关推荐
+- ✅ 导航栏：固定顶部、玻璃态效果
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 下一步计划
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] 接入真实 API 数据
+- [ ] 用户认证系统
+- [ ] 购物车功能
+- [ ] 订单管理
+- [ ] 支付集成
+- [ ] 用户个人中心
+- [ ] 饰品上架/出售功能
+- [ ] 实时价格更新
+- [ ] 交易历史记录
 
-## Deploy on Vercel
+## 许可证
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
