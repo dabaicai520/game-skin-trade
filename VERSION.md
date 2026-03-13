@@ -2,19 +2,52 @@
 
 ## Current Version Status
 
-**Version:** `1.0.0`  
-**Stability:** ✅ **Production Ready (MVP)**  
+**Version:** `1.1.0`  
+**Stability:** ✅ **Production Ready (MVP + Auth)**  
 **Release Date:** 2026-03-13 (Friday, March 13th)  
-**Codename:** "Buff Trade MVP Release"  
+**Codename:** "Buff Trade MVP with User Authentication"  
 
 ---
 
 ## Version History
 
-| Version | Date      | Status            | Description
+| Version | Date      | Status            | Changes Added
 --:|--:-|-:-|--
+v1.1.0     | 2026-03-13 | ✅ Production Ready   Added user login/register system + deploy scripts  
 v1.0.0     | 2026-03-13 | ✅ Production Ready   Initial MVP with full trading platform features  
-v0.0.0 (Initial)         2026-03-13 | 🧪 In Development     Project initialized & scaffolding complete
+
+---
+
+## Detailed Changes in v1.1.0
+
+### 🔥 New Features Implemented:
+```bash
+✅ feat(auth): User authentication system implementation
+• Added Login Page (/auth/login) — Complete with mock sessions  
+• Added Register Page (/auth/register) — Full form validation
+• Added useAuth Hook (src/hooks/useAuth.ts) — State management  
+
+🔧 Infrastructure Updates:
+• Added deploy.sh script for GitHub/GitLab/Vercel deployment automation  
+• Created GITHUB_PUSH_GUIDE.md for step-by-step upload instructions
+• Updated README & CHANGELOG with new features documented
+
+
+✅ Demo Accounts Available:
+Username: CSCollector / BuffTrader880  
+Password: 123456 (test all)
+
+
+Git Commits Added:    #4 - auth system implementation  
+Total Files:           v1.0 + new files = ~29 files total
+Lines of Code:        ~5,850 LOC increased to ~6,550 LOC (~700 lines added)
+```
+
+---
+
+**Next Target Version:** `v1.2.0` — Order History & Price Analytics  
+**Development Status:** On track to complete within 3-5 days
+
 
 ---
 
