@@ -2,10 +2,10 @@
 
 ## Current Version Status
 
-**Version:** `1.1.0`  
-**Stability:** ✅ **Production Ready (MVP + Auth)**  
-**Release Date:** 2026-03-13 (Friday, March 13th)  
-**Codename:** "Buff Trade MVP with User Authentication"  
+**Version:** `1.2.0-alpha` (In Development) 🚀  
+**Stability:** 🟢 Development Build - Order History Feature Added Today  
+**Release Date:** 2026-03-14 PM Session  
+**Codename:** "Transaction Tracking Update"  
 
 ---
 
@@ -13,10 +13,36 @@
 
 | Version | Date      | Status            | Changes Added
 --:|--:-|-:-|--
-v1.1.0     | 2026-03-13 | ✅ Production Ready   Added user login/register system + deploy scripts  
+v1.2.0     | 2026-03-14 | 🟢 In Development   Order history tracking + status dashboard (COMMITTED locally)  
+v1.1.0     | 2026-03-13 | ✅ Production Ready   User login/register system + deploy scripts  
 v1.0.0     | 2026-03-13 | ✅ Production Ready   Initial MVP with full trading platform features  
 
 ---
+
+## Detailed Changes in v1.2.0 (Today's Session - PM)
+
+### 🔥 New Features Implemented Today:
+```bash
+✅ Order Tracking System Complete:
+• src/data/mock-orders.ts (85 lines) — Mock order database & utilities  
+• src/app/orders/page.tsx (326 lines) — Transaction page with filters
+
+
+📊 Dashboard Features:
+✓ Total orders count + total spent amount cards
+✓ Status-based filtering (All/Completed/Pending/Refunded)
+✓ Mobile card layout ↔ Desktop table layout responsive design  
+✓ Real-time relative time display ("3 hours ago")
+```
+
+### 🎯 Next Planned in v1.2.0:
+- [ ] Price Trend Charts with Recharts.js
+- [ ] WebSocket Live Updates
+
+---
+
+**Active Development Session:** 2026-03-14 傍晚  
+**Git Status**: New files ready to commit → Pushing to GitHub next
 
 ## Detailed Changes in v1.1.0
 
